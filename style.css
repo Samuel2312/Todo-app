@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #333;
+  width: 100%;
+  min-height: 90px;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+nav h1 {
+  font-size: 2rem;
+  width: 180px;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  color:black;
+}
+.user-pic{
+width: 40px;
+border-radius: 50%;
+cursor: pointer;
+margin-left: 30px;
+}
+
+nav ul {
+  width: 100%;
+  text-align: right;
+
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 12px;
+}
+
+.sub-menu-wrap {
+position: absolute;
+top: 100%; 
+right: 10%; 
+width: 320px;
+max-height: 0px;
+overflow: hidden;
+transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+max-height: 400px;
+}
+
+.sub-menu {
+background: rgb(198, 198, 198);
+border-radius: 4%; 
+padding: 20px; 
+margin: 10px;
+}
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #333;
+  margin: 15px 0 10px;
+}
+.user-info {
+display: flex; 
+align-items: center;
+}
+.user-info h3{
+  font-weight: 500;
+}
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu a {
+display: flex; 
+align-items: center; 
+text-decoration: none; 
+color:black; 
+margin: 12px 0;
+}
+.sub-menu a {
+  font-size: 18px;
+  transition: transform 0.5s;
+}
+.sub-menu a:hover {
+  font-weight: 600;
+  transform: translateX(5px);
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+section {
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(25% - 1rem);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+section:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align:center;
+}    
+button{
+padding: 5px;
+margin: 10px;
+place-items: center;
+color: whitesmoke;
+background-color: rgb(92, 67, 67);
+}  
+#description{
+margin: 10px;
+}
+footer p{
+text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #calendar {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #calendar {
+    height: 300px;
+  }
+}
