@@ -1,5 +1,5 @@
 # Todo-app
-It's an app that allow user's to make a list of tasks he/she need to complete or things they want to to do 
+It's an app that allow user's to make a list of tasks he/she need to complete or things they want to to do.
 App requirements
    1.the user can reorder tasks 
    2.the user can prioritize tasks
